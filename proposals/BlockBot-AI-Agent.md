@@ -98,18 +98,29 @@ Existing Canton applications and workflows remain unchanged. BlockBot will inter
   * Technical implementation documentation.
   * Integration and security requirements defined.
   * Architecture ready for Milestone 2 implementation.
+ 
+## Milestone 2: Canton AI Agent & Transaction Execution Layer
 
-### Milestone 2: AI Agent Wallet Functionality
-* **Estimated Delivery:** Weeks 2–8
+* **Estimated Delivery:** Weeks 2–5
+* **Focus:** Extend BlockBot's AI agent to execute Canton-native actions through natural-language commands.
+* **Deliverables / Value Metrics:**
+
+  * Integrate Canton-specific transaction and application actions into the BlockBot AI agent.
+  * Convert natural-language requests into validated, structured transaction calls.
+  * Implement transaction simulation/validation and user confirmation before execution.
+  * Add transaction status tracking, failure handling, and user-facing confirmations.
+
+### Milestone 3: AI Agent Wallet Functionality
+* **Estimated Delivery:** Weeks 6–8
 * **Focus:** Canton Network mainnet integration and open-beta launch.
 * **Deliverables / Value Metrics:**
   * Canton Network smart wallet integrated with WhatsApp.
-  * Users can send and receive transactions on Canton Network mainnet.
+  * Support wallet actions including transfers, balance queries, transaction history, and supported Canton application interactions.
   * Users can check wallet balances through chat.
   * Open-beta soft launch with real mainnet transactions.
   * Initial user and transaction activity generated.
 
-### Milestone 3: Feedback, Developer Docs & Analytics
+### Milestone 4: Feedback, Developer Docs & Analytics
 
 * **Estimated Delivery:** Weeks 9–12
 * **Focus:** Production feedback, developer tooling, analytics, and ecosystem activation.
@@ -122,20 +133,45 @@ Existing Canton applications and workflows remain unchanged. BlockBot will inter
   * Track engagement with Canton Network miniapps.
   * At least 20 projects/teams integrate BlockBot's widget SDK or API into their application.
   * Launch deposit campaign.
-  * **Target: $10,000+ in deposited assets volume.**
+  * **Target: $10,000+ in deposited assets volume within 1 month post-launch.**
 
 ---
 
 ## Acceptance Criteria
-The Tech & Ops Committee will evaluate completion based on:
 
-- BlockBot's chat wallet is operational on the agreed Canton environment and can reliably execute supported wallet actions through WhatsApp.
-- Users can create/access their wallet, check balances, and initiate supported transfers through the chat interface without requiring a traditional Web3 wallet UI.
-- Transactions are correctly submitted, confirmed, and reflected in the user's wallet state and transaction history.
-- The BlockBot developer SDK/API enables developers to integrate supported Canton wallet and chat-based transaction functionality into their own applications.
-- Developer documentation is complete, publicly accessible, and sufficient for a developer to set up, integrate, and test the supported BlockBot functionality.
-- Analytics can measure chat-wallet activity, transaction activity, and engagement generated through BlockBot.
-- Production functionality is tested for reliability, transaction correctness, and appropriate user confirmation/security flows.
+The Tech & Ops Committee will evaluate completion based on demonstrated functionality, operational readiness, and ecosystem value across the milestones.
+
+### M1 - Documentation & Mainnet Architecture
+
+* Mainnet architecture and technical specifications are completed and aligned with the agreed Canton integration scope.
+* Developer documentation is sufficiently detailed to support implementation, testing, and future maintenance.
+* Required integration, security, and deployment requirements are clearly documented.
+
+### M2 - Canton AI Agent & Transaction Execution Layer
+
+* The AI agent can interpret supported natural-language Canton requests and convert them into validated transaction calls.
+* Supported actions, including transfers, balance queries, transaction history, and Canton application interactions, can be executed through WhatsApp.
+* Transaction validation, user confirmation, status tracking, and failure handling are implemented.
+* End-to-end Canton transaction execution through the BlockBot AI agent is demonstrated.
+
+### M3 - Crypto Chat Wallet V2
+
+* BlockBot's chat wallet is operational on the agreed Canton environment and can reliably execute supported wallet actions through WhatsApp.
+* Users can create or access their wallet, check balances, and initiate and receive supported transactions through the chat interface.
+* Transactions are correctly submitted, confirmed, and reflected in wallet state and transaction history.
+* The V2 release is demonstrated through an operational test or open-beta deployment.
+
+### M4 - Developer Documentation V3 & Analytics
+
+* Updated developer documentation is publicly accessible and enables developers to integrate and interact with BlockBot's Canton wallet functionality through the SDK/API.
+* Analytics can measure chat-wallet activity, transaction activity, and engagement generated through BlockBot.
+* Dashboard data accurately reflects relevant onchain and wallet activity.
+* Deposit activity and Total Value of Assets deposited can be measured and independently verified.
+
+### Co-Funding
+
+* **M2 — Canton AI Agent & Transaction Execution Layer** is co-funded by BGC LABS and requested at **0 CC** from the committee.
+* BGC LABS will deliver M2 regardless of committee funding, representing approximately **one month of engineering effort valued at ~360,000 CC**, calculated on the same basis as the other milestones.
 
 ### Ecosystem Value
 
@@ -154,8 +190,9 @@ Ecosystem value will be measured through:
 
 ### Payment Breakdown by Milestone
 - Milestone 1 _(Documentation & Mainnet Architecture)_: 180,00 CC upon committee acceptance
-- Milestone 2 _(AI Agent Wallet Functionality)_: 360,000 CC upon committee acceptance
-- Milestone 3 _(Feedback, Developer Docs & Analytics)_: 360,000 CC upon final release and acceptance
+- Milestone 2 _(Canton AI Agent & Transaction Execution Layer)_: 0 CC fully funded by BGC LABS
+- Milestone 3 _(AI Agent Wallet Functionality)_: 360,000 CC upon committee acceptance
+- Milestone 4 _(Feedback, Developer Docs & Analytics)_: 360,000 CC upon final release and acceptance
 
 ### Volatility Stipulation
 This project duration is **under 6 months**
@@ -201,3 +238,12 @@ _**WhatsApp → BlockBot AI Agent → Chat Wallet → Canton Network → Analyti
 This makes the integration applicable beyond a single BlockBot use case. Developers can use the SDK/API to build additional Canton-based applications and workflows on top of the same chat-wallet infrastructure.
 
 The rationale for this approach is therefore to use existing Canton capabilities for the underlying blockchain infrastructure while adding the missing **messaging, wallet abstraction, developer tooling, and analytics layers** needed to make Canton applications accessible through mainstream chat-based experiences.
+
+---
+
+## References
+### Team and prior-art references
+- Arbitrum DAO: We participated in the DAO Developer Tool Support Program. Reference link [here](https://forum.arbitrum.foundation/t/blockbot-integrating-arbitrums-smart-wallets-to-whatsapp-final-report/30277).
+- Avalanche Foundation: We were one of the participating projects in the Avalanche Foundation x Gitcoin QF rounds. Reference link [here](https://x.com/i/status/1895105015980671252).
+- BlockBot’s co-founder brings a strong background in Web3 and community development from Arbitrum DAO, Sia Foundation, Polkadex, and DAFI Protocol communities. He has led and contributed to several grant-funded DeFi initiatives and is experienced in driving open-source adoption. [LinkedIn profile](https://www.linkedin.com/in/stanford-b-4002a5235/details/experience/)
+- A fellow co-founder has a track record of contributing to socialFi projects such as Herocast, QR Coin, and POIHD, and over 3 years of experience building products and tools. [Technical Docs](https://docs.useblockbot.com/widget-setup-guide-steps/installation-quick-start)
