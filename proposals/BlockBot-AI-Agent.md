@@ -98,36 +98,37 @@ Existing Canton applications and workflows remain unchanged. BlockBot will inter
   * Technical implementation documentation.
   * Integration and security requirements defined.
   * Architecture ready for Milestone 2 implementation.
- 
-## Milestone 2: Canton AI Agent & Transaction Execution Layer
 
+### Milestone 2: BlockBot AI Agent & Transaction Execution Layer
+ Wallet Functionality
 * **Estimated Delivery:** Weeks 2–5
-* **Focus:** Extend BlockBot's AI agent to execute Canton-native actions through natural-language commands.
-* **Deliverables / Value Metrics:**
-
-  * Integrate Canton-specific transaction and application actions into the BlockBot AI agent.
-  * Convert natural-language requests into validated, structured transaction calls.
-  * Implement transaction simulation/validation and user confirmation before execution.
-  * Add transaction status tracking, failure handling, and user-facing confirmations.
-
-### Milestone 3: AI Agent Wallet Functionality
-* **Estimated Delivery:** Weeks 6–8
-* **Focus:** Canton Network mainnet integration and open-beta launch.
+* **Focus:** Extend BlockBot's AI agent to execute actions through natural-language commands on Canton Network mainnet and open-beta launch.
 * **Deliverables / Value Metrics:**
   * Canton Network smart wallet integrated with WhatsApp.
   * Support wallet actions including transfers, balance queries, transaction history, and supported Canton application interactions.
+  * Implement transaction simulation/validation and user confirmation before execution.
+  * Add transaction status tracking, failure handling, and user-facing confirmations.
   * Users can check wallet balances through chat.
   * Open-beta soft launch with real mainnet transactions.
   * Initial user and transaction activity generated.
+ 
+### Milestone 3: Developer Documentation, Widget SDK & API
 
-### Milestone 4: Feedback, Developer Docs & Analytics
+* **Estimated Delivery:** Weeks 6–10
+* **Focus:** Provide developers and teams with the documentation, SDK resources, and API guidance required to integrate BlockBot's Canton-enabled wallet and chat functionality into external applications.
+* **Deliverables / Value Metrics:**
+  * Release and open-source **Developer Documentation**.
+  * Document integration, authentication, wallet interactions, transaction flows, and usage of the BlockBot **Widget SDK/API** with Canton Network.
+  * Provide working integration examples and developer setup guides.
+  * Track unique chat-based wallet activity and transactions generated through integrated applications.
 
-* **Estimated Delivery:** Weeks 9–12
+
+### Milestone 4: Feedback & Analytics
+
+* **Estimated Delivery:** Weeks 11–12
 * **Focus:** Production feedback, developer tooling, analytics, and ecosystem activation.
 * **Deliverables / Value Metrics:**
-  * Incorporate feedback from the AI Agent Wallet open beta.
-  * Release and open-source **Developer Documentation V3**.
-  * Documentation covering how developers build and interact with Canton Network smart wallet through the Widget SDK/API.
+  * Incorporate feedback from the BlockBot AI Agent Wallet open beta.
   * Release **Analytics Dashboard**.
   * Track unique chat-based wallet activity on Canton Network.
   * Track engagement with Canton Network miniapps.
@@ -147,31 +148,29 @@ The Tech & Ops Committee will evaluate completion based on demonstrated function
 * Developer documentation is sufficiently detailed to support implementation, testing, and future maintenance.
 * Required integration, security, and deployment requirements are clearly documented.
 
-### M2 - Canton AI Agent & Transaction Execution Layer
+### M2 - BlockBot AI Agent & Transaction Execution Layer
 
-* The AI agent can interpret supported natural-language Canton requests and convert them into validated transaction calls.
-* Supported actions, including transfers, balance queries, transaction history, and Canton application interactions, can be executed through WhatsApp.
+* BlockBot's chat wallet is operational in the agreed Canton environment and can reliably execute supported wallet actions through WhatsApp.
 * Transaction validation, user confirmation, status tracking, and failure handling are implemented.
-* End-to-end Canton transaction execution through the BlockBot AI agent is demonstrated.
-
-### M3 - Crypto Chat Wallet V2
-
-* BlockBot's chat wallet is operational on the agreed Canton environment and can reliably execute supported wallet actions through WhatsApp.
 * Users can create or access their wallet, check balances, and initiate and receive supported transactions through the chat interface.
 * Transactions are correctly submitted, confirmed, and reflected in wallet state and transaction history.
-* The V2 release is demonstrated through an operational test or open-beta deployment.
+* The release is demonstrated through an operational test or open-beta deployment.
 
-### M4 - Developer Documentation V3 & Analytics
+### M3 - Developer Documentation, Widget SDK & API
 
 * Updated developer documentation is publicly accessible and enables developers to integrate and interact with BlockBot's Canton wallet functionality through the SDK/API.
+* We will provide working integration examples and developer setup guides.
+
+### M4 - Feedback & Analytics
+
 * Analytics can measure chat-wallet activity, transaction activity, and engagement generated through BlockBot.
 * Dashboard data accurately reflects relevant onchain and wallet activity.
 * Deposit activity and Total Value of Assets deposited can be measured and independently verified.
 
 ### Co-Funding
 
-* **M2 — Canton AI Agent & Transaction Execution Layer** is co-funded by BGC LABS and requested at **0 CC** from the committee.
-* BGC LABS will deliver M2 regardless of committee funding, representing approximately **one month of engineering effort valued at ~360,000 CC**, calculated on the same basis as the other milestones.
+* **M3 — Developer Documentation, Widget SDK & API** will be co-funded by BGC LABS and is requesting **0 CC**.
+* BGC LABS will deliver M3 even when not being funded by the committee, representing the duration of **one month of engineering effort valued at ~360,000 CC**.
 
 ### Ecosystem Value
 
@@ -190,9 +189,9 @@ Ecosystem value will be measured through:
 
 ### Payment Breakdown by Milestone
 - Milestone 1 _(Documentation & Mainnet Architecture)_: 180,00 CC upon committee acceptance
-- Milestone 2 _(Canton AI Agent & Transaction Execution Layer)_: 0 CC fully funded by BGC LABS
-- Milestone 3 _(AI Agent Wallet Functionality)_: 360,000 CC upon committee acceptance
-- Milestone 4 _(Feedback, Developer Docs & Analytics)_: 360,000 CC upon final release and acceptance
+- Milestone 2 _(BlockBot AI Agent & Transaction Execution Layer)_: 360,000 CC upon committee acceptance
+- Milestone 3 _(Developer Documentation, Widget SDK & API)_: 0 CC fully funded by BGC LABS
+- Milestone 4 _(Feedback & Analytics)_: 360,000 CC upon final release and acceptance
 
 ### Volatility Stipulation
 This project duration is **under 6 months**
@@ -200,7 +199,7 @@ This project duration is **under 6 months**
 ---
 
 ## Co-Marketing
-Upon release, the implementing entity will collaborate with the Foundation on:
+Upon release, BGC LABS will collaborate with the Foundation on:
 
 - Coordinated announcement of the Canton integration and product releases.
 - A technical case study or developer-focused blog explaining the integration.
@@ -242,8 +241,11 @@ The rationale for this approach is therefore to use existing Canton capabilities
 ---
 
 ## References
-### Team and prior-art references
+### Team and prior work references
 - Arbitrum DAO: We participated in the DAO Developer Tool Support Program. Reference link [here](https://forum.arbitrum.foundation/t/blockbot-integrating-arbitrums-smart-wallets-to-whatsapp-final-report/30277).
 - Avalanche Foundation: We were one of the participating projects in the Avalanche Foundation x Gitcoin QF rounds. Reference link [here](https://x.com/i/status/1895105015980671252).
 - BlockBot’s co-founder brings a strong background in Web3 and community development from Arbitrum DAO, Sia Foundation, Polkadex, and DAFI Protocol communities. He has led and contributed to several grant-funded DeFi initiatives and is experienced in driving open-source adoption. [LinkedIn profile](https://www.linkedin.com/in/stanford-b-4002a5235/details/experience/)
-- A fellow co-founder has a track record of contributing to socialFi projects such as Herocast, QR Coin, and POIHD, and over 3 years of experience building products and tools. [Technical Docs](https://docs.useblockbot.com/widget-setup-guide-steps/installation-quick-start)
+- An article explaining The Symbiotic Relationship Between AI Coins and AI Agents: Eliza, Virtuals, and Market Dynamics[https://medium.com/@buildercook/the-symbiotic-relationship-between-ai-coins-and-ai-agents-eliza-virtuals-and-market-dynamics-b7f43a470802](https://medium.com/@buildercook/the-symbiotic-relationship-between-ai-coins-and-ai-agents-eliza-virtuals-and-market-dynamics-b7f43a470802)
+- A fellow co-founder has a track record of contributing to socialFi projects such as Herocast, QR Coin, and POIHD, and over 3 years of experience building products and tools. [Technical Docs](https://blockchain-gazette.gitbook.io/blockbot/widget-setup-guide-steps/installation-quick-start)
+- A co-founder explains further what a decentralized exchange is and how it operates to help you understand the architecture before you dive in [https://medium.com/@Blockford/are-decentralized-exchanges-what-we-need-f4759e2d37df](https://medium.com/@Blockford/are-decentralized-exchanges-what-we-need-f4759e2d37df)
+- An article that dives deeper into blockchain nodes and how decentralized the blockchain is, the downside, and how to remain anonymous when interacting with blockchain nodes [https://medium.com/coinmonks/blockchain-node-provider-a-friend-or-a-foe-32a24681b286](https://medium.com/coinmonks/blockchain-node-provider-a-friend-or-a-foe-32a24681b286)
